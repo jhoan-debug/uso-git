@@ -1,0 +1,7 @@
+<form method="post">
+    {% csrf_token %}
+    <input name="nombre" placeholder="NOmbre del competidor" required>
+    <input name="centro" placeholder="Centro de formacion" required>
+    <input name="categoria" placeholder="Categoria" required>
+    <button type="submit">Inscribir</button>
+</form>
