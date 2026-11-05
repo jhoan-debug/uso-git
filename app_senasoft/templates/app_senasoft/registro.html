@@ -1,7 +1,19 @@
-<form method="post">
-    {% csrf_token %}
-    <input name="nombre" placeholder="NOmbre del competidor" required>
-    <input name="centro" placeholder="Centro de formacion" required>
-    <input name="categoria" placeholder="Categoria" required>
-    <button type="submit">Inscribir</button>
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <input name="nombre" placeholder="Nombre del competidor" required>
+        <input name="centro" placeholder="Centro de formacion" required>
+        <input name="categoria" placeholder="Categoria" required>
+        <button type="submit">Inscribir</button>
+    </form>
+</body>
+</html>

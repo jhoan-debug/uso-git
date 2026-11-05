@@ -67,6 +67,8 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 WSGI_APPLICATION = 'project_senasoft.wsgi.application'
 
 
